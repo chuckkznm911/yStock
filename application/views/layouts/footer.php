@@ -88,52 +88,8 @@
   </div>
 </div>
 
-<!-- AÑADIR CLIENTE -->
-<div class="modal fade" id="añadir-cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 style="color: #ffffff;" class="modal-title text-center" id="exampleModalLongTitle">Cliente <small>nuevo</small></h3>
-      </div>
-      <div class="modal-body">
-        <form method="POST" class="form-group">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="col-md-6">
-                <i class="fas fa-user-alt" style="font-size: 21px; color: #ffffff;"></i>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-              </div>
-              <div class="col-md-6">
-                <i class="fas fa-user-minus" style="font-size: 21px; color: #ffffff;"></i>
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-              </div>
-              <div class="col-md-6">
-                <i class="fa fa-address-card" style="font-size: 21px; color: #ffffff;"></i>
-                <input type="number" name="identificacion" id="identificacion" placeholder="Identificación">
-              </div>
-              <div class="col-md-6">
-                <i class="fas fa-city" style="font-size: 21px; color: #ffffff;"></i>
-                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
-              </div>
-              <div class="col-md-6">
-                <i class="fa fa-home" style="font-size: 21px; color: #ffffff;"></i>
-                <input type="text" name="direccion" id="direccion" placeholder="Dirección">
-              </div>
-              <div class="col-md-6">
-                <i class="fa fa-phone" style="font-size: 21px; color: #ffffff;"></i>
-                <input type="number" name="telefono" id="telefono" placeholder="Teléfono">
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="botonVerde">Guardar</button>
-      </div>
-    </div>
-  </div>
-</div>
+
+
 <!--ELIMINAR CLIENTE-->
 
 <div class="modal fade" id="eliminar-cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -268,6 +224,7 @@
 
 <script type="text/javascript" src="<?php echo base_url() ?>assets/template/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url() ?>assets/template/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript">
 
 	// var modalSettings = $('.navBar .icon-navBar #modal');
@@ -280,6 +237,9 @@
 	// 	modalSettings.removeClass('modalTrue');
 	// 	modalSettings.addClass('modal');
 	// });
+
+
+  
 
 	const getRemainTime = deadline => {
                         let now = new Date(),

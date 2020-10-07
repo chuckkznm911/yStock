@@ -1,4 +1,4 @@
-body {
+/*body {
   box-sizing: border-box;
 }
 .form {
@@ -15,7 +15,7 @@ body {
 }
 
 .form__group {
-  /* padding: .2rem; */
+  /* padding: .2rem; 
   width: 100%;
   margin: auto;
 }
@@ -60,7 +60,7 @@ body {
   color: white;
   text-decoration: none;
   transition: all .3s;
-  /* backface-visibility: hidden; */
+  /* backface-visibility: hidden; 
 }
 
 .btn--green {

@@ -1,5 +1,5 @@
 /* elementos */
-
+/*
 body {
     background-color: #fff;
     margin: 0 0;
@@ -28,7 +28,7 @@ i[class='fas fa-anchor']{
 /* fin elementos */
 
 /* clases universales */
-
+/*
 .navigation__link:link,
 .navigation__link:visited {
     display: flex;
@@ -99,7 +99,7 @@ i.f-right{
 }
 
 /* clases barra de navegación principal */
-
+/*
 .navBar{ 
 	border-bottom: 1px solid #ffffff; 
 	width: 100%; 
@@ -121,42 +121,30 @@ i.f-right{
 
 /* fin clases barra de navegación principal */
 
-.container{ 
-	margin: 0px 50px;
-}
+/*
 
-.content{ 
-	width: 100%;
-	height: 75vh; 
-	position: fixed; 
-	z-index: -1;
-}
-
-/* fin clases universales */
-
-
-
-.container .content h3:first-of-type{ font-weight: 111; text-align: center; padding-top: 25px; color: #ffffff; }
+.container .content h3:first-of-type{ position: absolute; left: 45%; font-weight: 111; text-align: center; padding-top: 25px; color: #ffffff; }
 
 .container .content h3:first-of-type span{ color: #ffffff; }
 
 /*.container .content .box{ width: 50%; height: 75%; border-right: 1px solid #ffffff; margin: 25px 0;}*/
-
+/*
 .container .content .box{ width: 25%; position: absolute; top: 50%; left: 50%; color: #ffffff; 
 	margin: 25px -12.5%; border: 1px solid #ffffff; transform: rotate(90deg); 
 }
 
 /* navBar left */
-
-.navBarLeft{ background-color: #2A2A2A; width: 50px; height: 75vh; float: left; transition: .6s ease; border}
+/*
+.navBarLeft{ background-color: #2A2A2A; width: 50px; height: 75vh; float: left; transition: .6s ease; }
 
 .navBarLeft:hover{ width: 250px; }
 
 .navBarLeft .icon-group .icon-g{ color: #fff; font-size: 19px; display: flex; justify-content: center; margin-top: 25px !important; }
 
+.navBarLeftFijo{ background-color: #2A2A2A; width: 250px; height: 75vh; float: left;}
 
 /* clientes navBar left */
-
+/*
 .navBarLeft:hover .icon-group .icon-g{
  display: none; 
 }
@@ -196,7 +184,7 @@ i.f-right{
 
 .navBarLeft:hover .icon-group #clientes:hover a p.triangulo{
 	transform: rotate(90deg) !important;
-	/*transform-origin: -45% 0% 225% !important;*/
+	/*transform-origin: -45% 0% 225% !important;
 	transform-origin: left !important;
 	padding-right: 26px;
 }
@@ -223,9 +211,27 @@ i.f-right{
 	background-color: #414141;
 }
 
+/* navBarLeft fijo 
+
+.navBarLeftFijo .icon-group i{
+	display: none;
+}
+
+.navBarLeftFijo .icon-group #clientes .test{
+	display: flex;
+	flex: 1;
+}
+
+.navBarLeftFijo .icon-group #clientes .test a{
+	padding-left: 15px;
+}
+
+.navBarLeftFijo .icon-group #clientes{
+	padding-top: 15px;
+}
 
 
-/* navBar right */
+/* navBar right 
 
 .navBarRight{ background-color: #2A2A2A; width: 50px; height: 75vh; float: right; transition: .6s ease;}
 
@@ -235,7 +241,7 @@ i.f-right{
 
 .navBarRight:hover .icon-group{ display: none; }
 
-/* navBar right Valid Time */
+/* navBar right Valid Time 
 
 .navBarRight .validTime { display: none; }
 
@@ -288,7 +294,7 @@ i.f-right{
 
 
 
-/* footer */
+/* footer 
 
 .footer{ border-top: 1px solid #ffffff; width: 100%; height: 12vh; display: table; }
 .footer .cite{ color: #ffffff; display: table-cell; vertical-align: middle; }
@@ -296,3 +302,22 @@ i.f-right{
 .footer a { text-decoration: none; color: #ffffff; font-size: 19px; display: table-cell; vertical-align: middle; padding-left: 25px; }
 
 
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge 
+    color: #ffffff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 
+   color: #ffffff;
+   opacity: 1 /* esto es porque Firefox le reduce la opacidad por defecto ;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ 
+   color: #ffffff;
+   opacity:  1;
+}
+:-ms-input-placeholder {  Internet Explorer 10-11 
+   color: #ffffff;
+}
+
+input{
+	color: #ffffff;
+}*/

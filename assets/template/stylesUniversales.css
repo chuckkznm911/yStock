@@ -1,4 +1,4 @@
-input{
+/*input{
     border: none !important;
     background-color: rgba(0, 0, 0, 0);
     width: 85%;
@@ -10,18 +10,18 @@ input{
     outline: none !important;
   }
 
-  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge 
     color: #ffffff;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 
    color: #ffffff;
-   opacity: 1 /* esto es porque Firefox le reduce la opacidad por defecto */;
+   opacity: 1 /* esto es porque Firefox le reduce la opacidad por defecto ;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
+::-moz-placeholder { /* Mozilla Firefox 19+ 
    color: #ffffff;
    opacity:  1;
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder { /* Internet Explorer 10-11 
    color: #ffffff;
 }
 
@@ -55,7 +55,12 @@ input{
 
 .tabla-oscura{
 	background-color: rgb(42, 42, 42);
-	box-shadow: 1px 15px 15px 15px rgb(42, 42, 42);
+	box-shadow: 1px 15px 5px 15px rgb(42, 42, 42);
+}
+
+.tabla-celeste{
+	background-color: #4D6FB8;
+	border: 1px solid #ffffff;
 }
 
 .titulo{
@@ -108,22 +113,35 @@ i.green{
 	float: right !important; 
 }
 
-/* container y content */
+/* container y content 
 
 .container{ 
-	margin: 0px 50px;
+	margin-left: 50px !important;
 }
 
-.content{ 
+.content2{ 
+	width: 90%;
+	height: 75vh;
+	display: flex;
+	float: right;
+}
+
+.content{
 	width: 100%;
-	height: 75vh; 
-	position: fixed; 
+	height: 75vh;
+	display: fixed;
 	z-index: -1;
 }
 
-/* clases barra de navegación principal */
+/* clases barra de navegación principal 
 
 .navBar{ 
+	border-bottom: 1px solid #ffffff; 
+	width: 100%; 
+	height: 12vh; 
+}
+
+.navBarFijo{ 
 	border-bottom: 1px solid #ffffff; 
 	width: 100%; 
 	height: 12vh; 
