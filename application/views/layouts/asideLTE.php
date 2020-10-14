@@ -43,7 +43,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" style="color: #fb005b;">
+            <a href="<?php echo base_url() ?>productos/productos" class="nav-link" style="color: #fb005b;">
               <i class="nav-icon fas fa-shopping-cart"></i>
               <p>
                 Productos
@@ -60,7 +60,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" style="color: #fb005b;">
+            <a href="<?php echo base_url() ?>ventas/ventas" class="nav-link" style="color: #fb005b;">
               <i class="nav-icon fas fa-handshake"></i>
               <p>
                 Ventas

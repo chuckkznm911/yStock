@@ -8,6 +8,8 @@ class clientes_model extends CI_Model {
 		return $r->result();
 	}
 
+
+
 	public function getCliente($id){
 		$r = $this->db->query("SELECT id_cliente, nombre_cliente, telefono_cliente, ciudad_cliente, direccion_cliente, ci.nombre_condicion as condicion_iva, cuit_cliente, email_cliente 
 			FROM clientes c, condiciones_iva ci
