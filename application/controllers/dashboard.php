@@ -4,10 +4,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class dashboard extends CI_Controller {
 
 	public function index(){
-		$this->load->view('layouts/headerLTE');
-		$this->load->view('layouts/asideLTE');
-		$this->load->view('layouts/contentLTE');
-		$this->load->view('layouts/footerLTE');
+		$this->load->view('layouts/headerNewDesign');
+		$this->load->view('layouts/asideNewDesign');
+		$this->load->view('layouts/contentNewDesign');
+		$this->load->view('layouts/footerNewDesign');
 	}
 }
 

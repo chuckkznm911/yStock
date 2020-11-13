@@ -15,10 +15,10 @@ class clientes extends CI_Controller {
 			'clientes' => $this->clientes_model->getClientes(),
 		);
 
-		$this->load->view('layouts/headerLTE');
-		$this->load->view('layouts/asideLTE');
-		$this->load->view('admin/clientes/clientes', $data);
-		$this->load->view('layouts/footerLTE');
+		$this->load->view('layouts/headerNewDesign');
+		$this->load->view('layouts/asideNewDesign');
+		$this->load->view('admin/clientes/clientes3', $data);
+		$this->load->view('layouts/footerNewDesign');
 	}
 
 	public function addCliente(){
